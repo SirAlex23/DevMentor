@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 DevMentor
 
-## Getting Started
+**Tu tutor de tecnología personalizado con IA**
 
-First, run the development server:
+DevMentor es una plataforma de aprendizaje que genera rutas personalizadas para desarrolladores usando Inteligencia Artificial. Selecciona tu categoría, tema y nivel — la IA crea un roadmap completo con lecciones interactivas y un tutor disponible 24/7.
+
+---
+
+## ✨ Características
+
+- 🤖 **Paths generados por IA** — Groq/Llama genera roadmaps personalizados según tu nivel
+- 💬 **Chat interactivo por lección** — Tutor IA que responde tus preguntas en tiempo real
+- 📊 **Seguimiento de progreso** — Dashboard con stats, checks verdes y barra de progreso
+- 🔐 **Autenticación completa** — Registro, login y logout con Supabase Auth
+- 🎯 **5 categorías, +50 temas** — Desarrollo, Cloud, Ciberseguridad, DevOps y Data
+- 📱 **3 niveles por tema** — Principiante, Intermedio y Avanzado
+
+---
+
+## 🗂️ Categorías disponibles
+
+| Categoría | Temas |
+|-----------|-------|
+| 💻 Desarrollo | JavaScript, TypeScript, React, Next.js, Node.js, Python, Vue.js, Django, Go, Rust... |
+| ☁️ Cloud | AWS, Google Cloud, Azure, Docker, Kubernetes, Firebase, Supabase... |
+| 🛡️ Ciberseguridad | Ethical Hacking, OSINT, Pentesting Web, Burp Suite, OWASP, CTF... |
+| ⚙️ DevOps | CI/CD, Linux, Git, Terraform, GitHub Actions, Prometheus, Grafana... |
+| 📊 Data | SQL, Machine Learning, LLMs, Deep Learning, MongoDB, Airflow... |
+
+---
+
+## 🛠️ Stack técnico
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq_API-F55036?style=for-the-badge&logo=groq&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+- **Frontend/Backend:** Next.js 14 + TypeScript
+- **Estilos:** Tailwind CSS
+- **Base de datos + Auth:** Supabase (PostgreSQL)
+- **IA:** Groq API con modelo Llama 3.3 70B
+- **Deploy:** Vercel
+
+---
+
+## 🚀 Instalación local
 
 ```bash
+# Clonar el repositorio
+git clone https://github.com/SirAlex23/DevMentor.git
+cd DevMentor/devmentor
+
+# Instalar dependencias
+npm install
+
+# Configurar variables de entorno
+cp .env.example .env.local
+# Añade tus keys de Supabase y Groq
+
+# Iniciar en desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔑 Variables de entorno
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+NEXT_PUBLIC_SUPABASE_URL=tu_url_de_supabase
+NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_anon_key
+GROQ_API_KEY=tu_groq_api_key
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 Capturas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> Landing page · Dashboard · Selector de path · Lección con chat IA · Progreso
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 👤 Autor
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Alejandro Juan Crespo Correa**  
+Desarrollador Full Stack Junior · Valencia, España  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/alejandro-crespo-574958388)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SirAlex23)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 Licencia
+
+MIT License — libre para usar y modificar.
