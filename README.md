@@ -76,12 +76,6 @@ GROQ_API_KEY=tu_groq_api_key
 
 ---
 
-## 📸 Capturas
-
-> Landing page · Dashboard · Selector de path · Lección con chat IA · Progreso
-
----
-
 ## 👤 Autor
 
 **Alejandro Juan Crespo Correa**  
